@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
+  <meta name="theme-color" content="#faf5e5">
+  <meta name="description" content="Defend the tower. Type to survive. Endless waves, eight-direction archery, and your personal high score.">
+  <title>Typer Tower Defense</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23132d4c'/%3E%3Cpath d='M8 7v7l3 3v10h10V17l3-3V7h-4v4h-3V7h-3v4h-3V7z' fill='%23e2b759'/%3E%3Cpath d='M15 21h3v6h-3z' fill='%23132d4c'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/landing-hero.webp" media="(min-width:761px) and (min-aspect-ratio:4/5), (orientation:landscape)">
+  <link rel="preload" as="image" href="assets/landing-mobile.webp" media="(max-width:760px) and (orientation:portrait), (max-aspect-ratio:4/5)">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body data-state="Menu">
+<main id="app">
+  <section id="menu" class="screen menu-screen" aria-labelledby="gameTitle">
+    <div class="hero-art" role="img" aria-label="A blue-cloaked archer guarding a stone tower in a sunlit alpine forest"></div>
+    <div class="utility">
+      <button id="audioButton" class="icon-button" aria-label="Unmute audio" title="Unmute audio"></button>
+      <button id="fullscreenButton" class="icon-button" aria-label="Enter fullscreen" title="Enter fullscreen"></button>
+    </div>
+    <div class="menu-copy">
+      <div class="title-ornament" aria-hidden="true">✦</div>
+      <h1 id="gameTitle"><span class="typer">Typer</span><span class="title-bottom"><span>Tower</span> <span>Defense</span></span></h1>
+      <div class="gold-rule" aria-hidden="true"><span>◆</span></div>
+      <h2>DEFEND THE TOWER.<br>TYPE TO SURVIVE.</h2>
+      <p class="description">Monsters are closing in. Type each monster’s name quickly and accurately to fire your arrows and protect your tower.</p>
+    </div>
+    <div class="menu-controls">
+      <button id="playButton" class="primary">PLAY NOW</button>
+      <p class="high-score"><span>HIGH SCORE</span><strong id="menuHighScore">0</strong></p>
+    </div>
+  </section>
+  <section id="loading" class="screen backdrop-screen" hidden aria-labelledby="loadingTitle">
+    <div class="card loading-card">
+      <span class="emblem" aria-hidden="true">✦</span><h1 id="loadingTitle">The watch begins</h1>
+      <p id="loadingStatus" role="status">Preparing the battlefield…</p>
+      <progress id="loadingProgress" max="100" value="0" aria-label="Loading artwork"></progress><span id="loadingPercent">0%</span>
+      <button id="retryLoading" class="primary" hidden>TRY AGAIN</button><button id="loadingMenu" class="text-button">BACK TO MENU</button>
+    </div>
+  </section>
+  <section id="game" class="screen game-screen" hidden aria-label="Battlefield">
+    <canvas id="gameCanvas" aria-label="Archer and approaching monsters"></canvas>
+    <div id="enemyLabels" class="enemy-labels"></div>
+    <div id="damageOverlay" class="damage-overlay" aria-hidden="true"></div>
+    <header class="battle-hud">
+      <div id="hearts" class="hearts" role="img" aria-label="5 of 5 hearts"></div>
+      <div class="wave-display"><strong id="waveTitle">WAVE 1</strong><div class="wave-track" aria-hidden="true"><div id="waveProgress"></div></div></div>
+      <button id="pauseButton" class="icon-button pause-button" aria-label="Pause game" title="Pause (Esc)"></button>
+    </header>
+    <div id="waveBanner" class="wave-banner" hidden><strong>WAVE CLEARED</strong><span id="nextWaveText"></span></div>
+    <div id="typingDock" class="typing-dock">
+      <p id="targetHint" class="target-hint">Type a monster’s name</p>
+      <div id="inputFrame" class="input-frame">
+        <span class="input-mark" aria-hidden="true">⌁</span>
+        <input id="typingInput" aria-label="Type a monster name" aria-describedby="targetHint" type="text" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" placeholder="Type a monster name…">
+        <span id="typingFeedback" class="input-mark" aria-hidden="true">✦</span>
+      </div>
+      <div class="live-stats"><span><b id="liveScore">0</b> SCORE</span><span><b id="liveWpm">0</b> WPM</span><span><b id="liveAccuracy">—</b> ACCURACY</span><span><b id="liveKills">0</b> DEFEATED</span></div>
+    </div>
+    <div id="readyOverlay" class="game-overlay" hidden>
+      <div class="card overlay-card"><h2 id="readyTitle">Ready, archer?</h2><p id="readyDescription">Type the names above the monsters.<br>Backspace fixes mistakes. No Enter needed.</p><button id="startButton" class="primary">TAP TO START</button><div id="countdown" class="countdown" hidden></div></div>
+    </div>
+    <div id="pauseOverlay" class="game-overlay" hidden>
+      <div class="card overlay-card" role="dialog" aria-modal="true" aria-labelledby="pauseTitle">
+        <span class="eyebrow">TAKE A BREATH</span><h2 id="pauseTitle">PAUSED</h2><p id="pauseReason">Your tower is safe while you’re away.</p>
+        <button id="resumeButton" class="primary">RESUME</button><button id="restartButton" class="secondary">RESTART</button><button id="pauseMenu" class="text-button">BACK TO MENU</button>
+        <div class="pause-utility"><button id="pauseAudio" class="icon-button" aria-label="Unmute audio"></button><button id="pauseFullscreen" class="icon-button" aria-label="Enter fullscreen"></button></div>
+      </div>
+    </div>
+  </section>
+  <section id="result" class="screen backdrop-screen" hidden aria-labelledby="resultTitle">
+    <div class="card result-card">
+      <span class="emblem fallen" aria-hidden="true">◇</span><span class="eyebrow">THE WATCH HAS ENDED</span><h1 id="resultTitle">TOWER FALLEN</h1>
+      <p id="personalBest" class="personal-best" hidden>NEW HIGH SCORE!</p>
+      <dl id="resultStats" class="result-stats"></dl>
+      <p class="result-high-score">HIGH SCORE <strong id="resultHighScore">0</strong></p>
+      <button id="resultAction" class="primary">TRY AGAIN</button><button id="resultMenu" class="text-button">BACK TO MENU</button>
+    </div>
+  </section>
+</main>
+<div id="toast" role="status" hidden></div>
+<noscript>This game needs JavaScript. Enable JavaScript to defend your tower.</noscript>
+</body>
+</html>

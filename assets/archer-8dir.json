@@ -1,0 +1,1393 @@
+{
+  "image": "archer-8dir.webp",
+  "source": "reference/archer-source.png",
+  "cellWidth": 220,
+  "cellHeight": 190,
+  "columns": 6,
+  "rows": 8,
+  "sourceXEdges": [
+    63,
+    251,
+    440,
+    627,
+    815,
+    1021,
+    1249
+  ],
+  "sourceYEdges": [
+    37,
+    189,
+    335,
+    479,
+    625,
+    773,
+    924,
+    1067,
+    1247
+  ],
+  "directions": [
+    "up",
+    "up-right",
+    "right",
+    "down-right",
+    "down",
+    "down-left",
+    "left",
+    "up-left"
+  ],
+  "stages": [
+    "ready",
+    "nock",
+    "draw",
+    "aim",
+    "release",
+    "reset"
+  ],
+  "referenceBodyHeight": 132,
+  "frames": {
+    "up-ready": {
+      "x": 0,
+      "y": 0,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        65,
+        39,
+        249,
+        187
+      ],
+      "trimRect": [
+        48,
+        0,
+        140,
+        148
+      ],
+      "sourceAnchor": [
+        99.0,
+        147.0
+      ],
+      "packedOffset": [
+        59,
+        31
+      ]
+    },
+    "up-nock": {
+      "x": 220,
+      "y": 0,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        253,
+        39,
+        438,
+        187
+      ],
+      "trimRect": [
+        58,
+        0,
+        136,
+        148
+      ],
+      "sourceAnchor": [
+        96.5,
+        147.0
+      ],
+      "packedOffset": [
+        72,
+        31
+      ]
+    },
+    "up-draw": {
+      "x": 440,
+      "y": 0,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        442,
+        39,
+        625,
+        187
+      ],
+      "trimRect": [
+        54,
+        0,
+        134,
+        148
+      ],
+      "sourceAnchor": [
+        95.0,
+        147.0
+      ],
+      "packedOffset": [
+        69,
+        31
+      ]
+    },
+    "up-aim": {
+      "x": 660,
+      "y": 0,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        629,
+        39,
+        813,
+        187
+      ],
+      "trimRect": [
+        56,
+        0,
+        135,
+        148
+      ],
+      "sourceAnchor": [
+        97.5,
+        147.0
+      ],
+      "packedOffset": [
+        68,
+        31
+      ]
+    },
+    "up-release": {
+      "x": 880,
+      "y": 0,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        817,
+        39,
+        1019,
+        187
+      ],
+      "trimRect": [
+        62,
+        0,
+        143,
+        148
+      ],
+      "sourceAnchor": [
+        101.5,
+        147.0
+      ],
+      "packedOffset": [
+        70,
+        31
+      ]
+    },
+    "up-reset": {
+      "x": 1100,
+      "y": 0,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        1023,
+        39,
+        1247,
+        187
+      ],
+      "trimRect": [
+        69,
+        0,
+        161,
+        148
+      ],
+      "sourceAnchor": [
+        119.0,
+        147.0
+      ],
+      "packedOffset": [
+        60,
+        31
+      ]
+    },
+    "up-right-ready": {
+      "x": 0,
+      "y": 190,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        65,
+        191,
+        249,
+        333
+      ],
+      "trimRect": [
+        46,
+        2,
+        140,
+        142
+      ],
+      "sourceAnchor": [
+        92.0,
+        141.0
+      ],
+      "packedOffset": [
+        64,
+        39
+      ]
+    },
+    "up-right-nock": {
+      "x": 220,
+      "y": 190,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        253,
+        191,
+        438,
+        333
+      ],
+      "trimRect": [
+        47,
+        0,
+        139,
+        142
+      ],
+      "sourceAnchor": [
+        92.5,
+        141.0
+      ],
+      "packedOffset": [
+        64,
+        37
+      ]
+    },
+    "up-right-draw": {
+      "x": 440,
+      "y": 190,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        442,
+        191,
+        625,
+        333
+      ],
+      "trimRect": [
+        45,
+        4,
+        136,
+        142
+      ],
+      "sourceAnchor": [
+        90.0,
+        141.0
+      ],
+      "packedOffset": [
+        65,
+        41
+      ]
+    },
+    "up-right-aim": {
+      "x": 660,
+      "y": 190,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        629,
+        191,
+        813,
+        333
+      ],
+      "trimRect": [
+        46,
+        0,
+        140,
+        142
+      ],
+      "sourceAnchor": [
+        92.0,
+        141.0
+      ],
+      "packedOffset": [
+        64,
+        37
+      ]
+    },
+    "up-right-release": {
+      "x": 880,
+      "y": 190,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        817,
+        191,
+        1019,
+        333
+      ],
+      "trimRect": [
+        49,
+        5,
+        149,
+        142
+      ],
+      "sourceAnchor": [
+        94.5,
+        141.0
+      ],
+      "packedOffset": [
+        64,
+        42
+      ]
+    },
+    "up-right-reset": {
+      "x": 1100,
+      "y": 190,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        1023,
+        191,
+        1247,
+        333
+      ],
+      "trimRect": [
+        67,
+        3,
+        166,
+        142
+      ],
+      "sourceAnchor": [
+        112.5,
+        141.0
+      ],
+      "packedOffset": [
+        64,
+        40
+      ]
+    },
+    "right-ready": {
+      "x": 0,
+      "y": 380,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        65,
+        337,
+        249,
+        477
+      ],
+      "trimRect": [
+        37,
+        7,
+        169,
+        140
+      ],
+      "sourceAnchor": [
+        88.0,
+        139.0
+      ],
+      "packedOffset": [
+        59,
+        46
+      ]
+    },
+    "right-nock": {
+      "x": 220,
+      "y": 380,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        253,
+        337,
+        438,
+        477
+      ],
+      "trimRect": [
+        44,
+        6,
+        163,
+        140
+      ],
+      "sourceAnchor": [
+        89.5,
+        139.0
+      ],
+      "packedOffset": [
+        64,
+        45
+      ]
+    },
+    "right-draw": {
+      "x": 440,
+      "y": 380,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        442,
+        337,
+        625,
+        477
+      ],
+      "trimRect": [
+        38,
+        6,
+        167,
+        140
+      ],
+      "sourceAnchor": [
+        88.0,
+        139.0
+      ],
+      "packedOffset": [
+        60,
+        45
+      ]
+    },
+    "right-aim": {
+      "x": 660,
+      "y": 380,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        629,
+        337,
+        813,
+        477
+      ],
+      "trimRect": [
+        42,
+        4,
+        171,
+        140
+      ],
+      "sourceAnchor": [
+        90.5,
+        139.0
+      ],
+      "packedOffset": [
+        62,
+        43
+      ]
+    },
+    "right-release": {
+      "x": 880,
+      "y": 380,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        817,
+        337,
+        1019,
+        477
+      ],
+      "trimRect": [
+        40,
+        7,
+        177,
+        140
+      ],
+      "sourceAnchor": [
+        91.0,
+        139.0
+      ],
+      "packedOffset": [
+        59,
+        46
+      ]
+    },
+    "right-reset": {
+      "x": 1100,
+      "y": 380,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        1023,
+        337,
+        1247,
+        477
+      ],
+      "trimRect": [
+        64,
+        7,
+        191,
+        140
+      ],
+      "sourceAnchor": [
+        111.5,
+        139.0
+      ],
+      "packedOffset": [
+        62,
+        46
+      ]
+    },
+    "down-right-ready": {
+      "x": 0,
+      "y": 570,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        65,
+        481,
+        249,
+        623
+      ],
+      "trimRect": [
+        46,
+        5,
+        163,
+        142
+      ],
+      "sourceAnchor": [
+        87.5,
+        141.0
+      ],
+      "packedOffset": [
+        68,
+        42
+      ]
+    },
+    "down-right-nock": {
+      "x": 220,
+      "y": 570,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        253,
+        481,
+        438,
+        623
+      ],
+      "trimRect": [
+        47,
+        5,
+        171,
+        142
+      ],
+      "sourceAnchor": [
+        96.0,
+        141.0
+      ],
+      "packedOffset": [
+        61,
+        42
+      ]
+    },
+    "down-right-draw": {
+      "x": 440,
+      "y": 570,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        442,
+        481,
+        625,
+        623
+      ],
+      "trimRect": [
+        47,
+        6,
+        174,
+        142
+      ],
+      "sourceAnchor": [
+        92.5,
+        141.0
+      ],
+      "packedOffset": [
+        64,
+        43
+      ]
+    },
+    "down-right-aim": {
+      "x": 660,
+      "y": 570,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        629,
+        481,
+        813,
+        623
+      ],
+      "trimRect": [
+        49,
+        5,
+        175,
+        142
+      ],
+      "sourceAnchor": [
+        93.5,
+        141.0
+      ],
+      "packedOffset": [
+        66,
+        42
+      ]
+    },
+    "down-right-release": {
+      "x": 880,
+      "y": 570,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        817,
+        481,
+        1019,
+        623
+      ],
+      "trimRect": [
+        52,
+        6,
+        176,
+        142
+      ],
+      "sourceAnchor": [
+        97.0,
+        141.0
+      ],
+      "packedOffset": [
+        65,
+        43
+      ]
+    },
+    "down-right-reset": {
+      "x": 1100,
+      "y": 570,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        1023,
+        481,
+        1247,
+        623
+      ],
+      "trimRect": [
+        67,
+        5,
+        186,
+        142
+      ],
+      "sourceAnchor": [
+        107.0,
+        141.0
+      ],
+      "packedOffset": [
+        70,
+        42
+      ]
+    },
+    "down-ready": {
+      "x": 0,
+      "y": 760,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        65,
+        627,
+        249,
+        771
+      ],
+      "trimRect": [
+        54,
+        2,
+        137,
+        144
+      ],
+      "sourceAnchor": [
+        89.5,
+        143.0
+      ],
+      "packedOffset": [
+        74,
+        37
+      ]
+    },
+    "down-nock": {
+      "x": 220,
+      "y": 760,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        253,
+        627,
+        438,
+        771
+      ],
+      "trimRect": [
+        52,
+        2,
+        135,
+        144
+      ],
+      "sourceAnchor": [
+        91.5,
+        143.0
+      ],
+      "packedOffset": [
+        70,
+        37
+      ]
+    },
+    "down-draw": {
+      "x": 440,
+      "y": 760,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        442,
+        627,
+        625,
+        771
+      ],
+      "trimRect": [
+        49,
+        2,
+        135,
+        144
+      ],
+      "sourceAnchor": [
+        92.0,
+        143.0
+      ],
+      "packedOffset": [
+        67,
+        37
+      ]
+    },
+    "down-aim": {
+      "x": 660,
+      "y": 760,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        629,
+        627,
+        813,
+        771
+      ],
+      "trimRect": [
+        48,
+        1,
+        138,
+        144
+      ],
+      "sourceAnchor": [
+        90.5,
+        143.0
+      ],
+      "packedOffset": [
+        68,
+        36
+      ]
+    },
+    "down-release": {
+      "x": 880,
+      "y": 760,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        817,
+        627,
+        1019,
+        771
+      ],
+      "trimRect": [
+        53,
+        1,
+        140,
+        144
+      ],
+      "sourceAnchor": [
+        95.5,
+        143.0
+      ],
+      "packedOffset": [
+        68,
+        36
+      ]
+    },
+    "down-reset": {
+      "x": 1100,
+      "y": 760,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        1023,
+        627,
+        1247,
+        771
+      ],
+      "trimRect": [
+        66,
+        2,
+        153,
+        144
+      ],
+      "sourceAnchor": [
+        101.0,
+        143.0
+      ],
+      "packedOffset": [
+        75,
+        37
+      ]
+    },
+    "down-left-ready": {
+      "x": 0,
+      "y": 950,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        65,
+        775,
+        249,
+        922
+      ],
+      "trimRect": [
+        18,
+        2,
+        141,
+        147
+      ],
+      "sourceAnchor": [
+        97.0,
+        146.0
+      ],
+      "packedOffset": [
+        31,
+        34
+      ]
+    },
+    "down-left-nock": {
+      "x": 220,
+      "y": 950,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        253,
+        775,
+        438,
+        922
+      ],
+      "trimRect": [
+        18,
+        1,
+        143,
+        147
+      ],
+      "sourceAnchor": [
+        92.5,
+        146.0
+      ],
+      "packedOffset": [
+        36,
+        33
+      ]
+    },
+    "down-left-draw": {
+      "x": 440,
+      "y": 950,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        442,
+        775,
+        625,
+        922
+      ],
+      "trimRect": [
+        21,
+        1,
+        141,
+        147
+      ],
+      "sourceAnchor": [
+        95.0,
+        146.0
+      ],
+      "packedOffset": [
+        36,
+        33
+      ]
+    },
+    "down-left-aim": {
+      "x": 660,
+      "y": 950,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        629,
+        775,
+        813,
+        922
+      ],
+      "trimRect": [
+        26,
+        1,
+        143,
+        147
+      ],
+      "sourceAnchor": [
+        96.0,
+        146.0
+      ],
+      "packedOffset": [
+        40,
+        33
+      ]
+    },
+    "down-left-release": {
+      "x": 880,
+      "y": 950,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        817,
+        775,
+        1019,
+        922
+      ],
+      "trimRect": [
+        19,
+        1,
+        148,
+        147
+      ],
+      "sourceAnchor": [
+        102.5,
+        146.0
+      ],
+      "packedOffset": [
+        26,
+        33
+      ]
+    },
+    "down-left-reset": {
+      "x": 1100,
+      "y": 950,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        1023,
+        775,
+        1247,
+        922
+      ],
+      "trimRect": [
+        27,
+        2,
+        158,
+        147
+      ],
+      "sourceAnchor": [
+        108.5,
+        146.0
+      ],
+      "packedOffset": [
+        28,
+        34
+      ]
+    },
+    "left-ready": {
+      "x": 0,
+      "y": 1140,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        65,
+        926,
+        249,
+        1065
+      ],
+      "trimRect": [
+        11,
+        6,
+        142,
+        139
+      ],
+      "sourceAnchor": [
+        93.0,
+        138.0
+      ],
+      "packedOffset": [
+        28,
+        46
+      ]
+    },
+    "left-nock": {
+      "x": 220,
+      "y": 1140,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        253,
+        926,
+        438,
+        1065
+      ],
+      "trimRect": [
+        11,
+        6,
+        140,
+        139
+      ],
+      "sourceAnchor": [
+        92.5,
+        138.0
+      ],
+      "packedOffset": [
+        28,
+        46
+      ]
+    },
+    "left-draw": {
+      "x": 440,
+      "y": 1140,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        442,
+        926,
+        625,
+        1065
+      ],
+      "trimRect": [
+        13,
+        7,
+        139,
+        139
+      ],
+      "sourceAnchor": [
+        92.0,
+        138.0
+      ],
+      "packedOffset": [
+        31,
+        47
+      ]
+    },
+    "left-aim": {
+      "x": 660,
+      "y": 1140,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        629,
+        926,
+        813,
+        1065
+      ],
+      "trimRect": [
+        11,
+        5,
+        140,
+        139
+      ],
+      "sourceAnchor": [
+        92.5,
+        138.0
+      ],
+      "packedOffset": [
+        28,
+        45
+      ]
+    },
+    "left-release": {
+      "x": 880,
+      "y": 1140,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        817,
+        926,
+        1019,
+        1065
+      ],
+      "trimRect": [
+        7,
+        7,
+        153,
+        139
+      ],
+      "sourceAnchor": [
+        104.5,
+        138.0
+      ],
+      "packedOffset": [
+        12,
+        47
+      ]
+    },
+    "left-reset": {
+      "x": 1100,
+      "y": 1140,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        1023,
+        926,
+        1247,
+        1065
+      ],
+      "trimRect": [
+        21,
+        7,
+        158,
+        139
+      ],
+      "sourceAnchor": [
+        107.5,
+        138.0
+      ],
+      "packedOffset": [
+        24,
+        47
+      ]
+    },
+    "up-left-ready": {
+      "x": 0,
+      "y": 1330,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        65,
+        1069,
+        249,
+        1245
+      ],
+      "trimRect": [
+        35,
+        3,
+        144,
+        158
+      ],
+      "sourceAnchor": [
+        91.0,
+        157.0
+      ],
+      "packedOffset": [
+        54,
+        24
+      ]
+    },
+    "up-left-nock": {
+      "x": 220,
+      "y": 1330,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        253,
+        1069,
+        438,
+        1245
+      ],
+      "trimRect": [
+        41,
+        4,
+        148,
+        161
+      ],
+      "sourceAnchor": [
+        94.5,
+        160.0
+      ],
+      "packedOffset": [
+        56,
+        22
+      ]
+    },
+    "up-left-draw": {
+      "x": 440,
+      "y": 1330,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        442,
+        1069,
+        625,
+        1245
+      ],
+      "trimRect": [
+        44,
+        0,
+        142,
+        160
+      ],
+      "sourceAnchor": [
+        95.5,
+        159.0
+      ],
+      "packedOffset": [
+        58,
+        19
+      ]
+    },
+    "up-left-aim": {
+      "x": 660,
+      "y": 1330,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        629,
+        1069,
+        813,
+        1245
+      ],
+      "trimRect": [
+        41,
+        0,
+        146,
+        161
+      ],
+      "sourceAnchor": [
+        95.5,
+        160.0
+      ],
+      "packedOffset": [
+        56,
+        18
+      ]
+    },
+    "up-left-release": {
+      "x": 880,
+      "y": 1330,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        817,
+        1069,
+        1019,
+        1245
+      ],
+      "trimRect": [
+        53,
+        4,
+        155,
+        163
+      ],
+      "sourceAnchor": [
+        106.0,
+        162.0
+      ],
+      "packedOffset": [
+        57,
+        20
+      ]
+    },
+    "up-left-reset": {
+      "x": 1100,
+      "y": 1330,
+      "w": 220,
+      "h": 190,
+      "anchorX": 110.0,
+      "anchorY": 178,
+      "sourceRect": [
+        1023,
+        1069,
+        1247,
+        1245
+      ],
+      "trimRect": [
+        57,
+        0,
+        159,
+        163
+      ],
+      "sourceAnchor": [
+        109.0,
+        162.0
+      ],
+      "packedOffset": [
+        58,
+        16
+      ]
+    }
+  }
+}
